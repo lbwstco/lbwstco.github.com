@@ -8,12 +8,12 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : 鸡排斗士 
+tagline: 人就一辈子
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
+  name : Bowen Kyrie
+  email : lbwstco@163.com
+  github : lbwstco
   twitter : username
   feedburner : feedname
 
@@ -128,3 +128,4 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+markdown: kramdown
