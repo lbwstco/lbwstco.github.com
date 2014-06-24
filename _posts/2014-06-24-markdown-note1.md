@@ -22,3 +22,6 @@ keywords: Markdown
 * 一些HTML区块元素需要在前后加上空行隔开，区块间Markdown格式语法不会被处理
 * HTML区段标签可以随意使用，甚至完全替代Markdown格式，Markdown语法在区段标签中是有效的
 
+
+####特殊字符自动转换####
+ 不同于HTML中，一些字符需要手动进行转换，Markdown会根据当前的语境自动对字符进行转换
