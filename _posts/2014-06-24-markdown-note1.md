@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown Learning Records 1 (Outline) 
+title: Markdown 学习记录一1 (Outline) 
 description: 根据官方文档进行学习，以下从宗旨、兼容HTML、特殊字符自动转换三方面精简官方文档之内容 
 keywords: Markdown
 ---
