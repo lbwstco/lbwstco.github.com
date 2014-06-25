@@ -10,6 +10,6 @@ keywords: Shopping
 
 * Vsonic VSD3
 * Nexus 5 RED
-* GAC3494
+* Moto 360 
 * rMBP 13
-
+* Cherry G80-3000
