@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown 学习记录三(区段元素)
-description: 
+description: 从链接、强调、代码和图片这几方面来简介Markdown中区段元素相关语法 
 keywords: 
 ---
 
