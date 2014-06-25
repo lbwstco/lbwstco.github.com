@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 购物清单
-description: 
+description: 果然搞机的都是高富帅，屌丝情何以堪
 keywords: Shopping 
 ---
 
