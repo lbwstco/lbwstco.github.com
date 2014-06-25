@@ -11,4 +11,4 @@ keywords: Markdown
 
 
 ####标题####
-+ Setext形式:用底线表示，<code>=</cord>(最高阶)和<code>-</code>(二阶)
++ Setext形式:用底线表示，<code>=</code>(最高阶)和<code>-</code>(二阶)
