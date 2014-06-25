@@ -43,7 +43,7 @@ page:
     url: /links.html
     last: true
   - text: 关于我
-    url: /contact.html
+    url: /about.html
     last: false
 
 author:
