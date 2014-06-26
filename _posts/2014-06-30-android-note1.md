@@ -19,6 +19,7 @@ keywords: Android
 		</shape>
 	</pre>
 
+
 {% highlight c %}
 /* hello world demo */
 #include <stdio.h>
