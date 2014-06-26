@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 购物清单
-description: 
+description: 果然搞机的都是高富帅，屌丝情何以堪
 keywords: Shopping 
 ---
 
@@ -10,6 +10,6 @@ keywords: Shopping
 
 * Vsonic VSD3
 * Nexus 5 RED
-* GAC3494
+* Moto 360 
 * rMBP 13
-
+* Cherry G80-3000
