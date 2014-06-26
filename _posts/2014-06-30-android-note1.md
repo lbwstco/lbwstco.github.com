@@ -10,6 +10,8 @@ keywords: Android
 
 
 * 未选中状态，色值为#F7F7F7:
+
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android" >
@@ -21,6 +23,8 @@ keywords: Android
 </shape>
 ```
 * 选中状态，色值为
+
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android" >
