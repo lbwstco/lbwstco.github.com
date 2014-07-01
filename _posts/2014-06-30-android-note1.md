@@ -35,8 +35,7 @@ keywords: Android
 ```
 
 
-###控件整体布局###
-
+###控件整体布局：###
 
 
 ```xml
@@ -89,4 +88,29 @@ keywords: Android
 			android:textColor="#FF6F84" />
 	</LinearLayout>
 </FrameLayout>
+```
+
+
+###代码控制动画：###
+
+
+```java
+private void headNavAnimation(int type) {
+	float fromX, toX;
+	if (type == 1) {
+		fromX = 0;
+		toX = 1.0f;
+	} else {
+		fromX = 1.0f;
+		toX = 0;
+	}
+	TranslateAnimation translateAnimation = new TranslateAnimation(
+			Animation.RELATIVE_TO_SELF, fromX, Animation.RELATIVE_TO_SELF,
+			toX, Animation.RELATIVE_TO_SELF, 0, Animation.RELATIVE_TO_SELF,
+			0);
+	translateAnimation.setDuration(150);
+	translateAnimation.setFillAfter(true);
+	translateAnimation.setFillEnabled(true);
+	navBg.startAnimation(translateAnimation);
+}
 ```
