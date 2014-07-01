@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android自定义Tab及切换动画
+title: Custom Android Tab
 description: 
 keywords: Android
 ---
