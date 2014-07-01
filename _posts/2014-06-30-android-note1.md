@@ -35,6 +35,10 @@ keywords: Android
 ```
 
 
+通过**corners**构造圆角形状，并通过**solid**填充颜色。
+
+
+
 ###控件整体布局：###
 
 
@@ -45,8 +49,7 @@ keywords: Android
 	android:layout_height="30dp"
 	android:layout_centerInParent="true"
 	android:background="@drawable/head_nav_corner"
-	android:padding="2dp"
-	android:visibility="gone" >
+	android:padding="2dp" >
 
 	<LinearLayout
 		android:id="@+id/outNavBg"
@@ -91,6 +94,9 @@ keywords: Android
 ```
 
 
+以FrameLayout布局控件构造层叠布局，底层以选中状态的drawable为背景，上层用TextView控件构造两个Tab。
+
+
 ###代码控制动画：###
 
 
@@ -114,3 +120,9 @@ private void headNavAnimation(int type) {
 	navBg.startAnimation(translateAnimation);
 }
 ```
+
+
+navBg为控件布局中底层LinearLayout中的TextView，通过设置TranslateAnimation动画控制TextView的水平移动，type参数控制移动的方向。
+
+
+
