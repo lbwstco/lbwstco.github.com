@@ -125,4 +125,6 @@ private void headNavAnimation(int type) {
 navBg为控件布局中底层LinearLayout中的TextView，通过设置TranslateAnimation动画控制TextView的水平移动，type参数控制移动的方向。
 
 
+设置上层两个TextView控件的点击事件中调用headNavAnimation()函数，并且控制页面主体的改变。
+
 
