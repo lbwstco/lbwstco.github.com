@@ -7,8 +7,6 @@ keywords: TranslateAnimation, Repeat
 
 
 ####实现控件上下循环移动####
-
-
 ```Java
 private void arrowAnimation() {
 	TranslateAnimation translateAnimation = new TranslateAnimation(0, 0, 0, 3.0f);
