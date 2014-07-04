@@ -18,11 +18,12 @@ keywords: Android Studio, HoloEverywhere
 7. 修改holoeverywhere-library中的build-gradle文件中的dependencies语句块，添加:
 
 
-```javascript
+```Groovy
 compile files('../libs/nineoldandroids.jar')
 compile files('../libs/support-v4.jar')
 ```
-   注意一些Version的设置
+
+
 8. 添加项目对holoeverywhere-library的依赖，Rebuild Project
 
 
