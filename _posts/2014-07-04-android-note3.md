@@ -20,3 +20,6 @@ private void arrowAnimation() {
 	widget.startAnimation(translateAnimation);
 }
 ```
+
+
+代码中通过setRepeatCount(Animation.INFINITE)设置动画的循环播放效果。
