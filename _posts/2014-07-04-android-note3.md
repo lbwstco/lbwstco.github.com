@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android TranlateAnimation动画循环播放
-description:
+description: 
 keywords: TranslateAnimation, Repeat
 ---
 
