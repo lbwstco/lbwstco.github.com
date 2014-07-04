@@ -16,7 +16,7 @@ keywords: Android Studio, HoloEverywhere
 5. 修改src文件夹的名称为Java;
 6. 拷贝library/libs目录中的nineoldandroids.jar以及support-v4.jar至项目更目录的libs文件夹下
 7. 修改holoeverywhere-library中的build-gradle文件中的dependencies语句块，添加:
-```Groovy
+```javascript
 compile files('../libs/nineoldandroids.jar')
 compile files('../libs/support-v4.jar')
 ```
