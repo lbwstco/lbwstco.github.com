@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Android TranlateAnimation动画循环播放
+title: TranslateAnimation实现循环动画
 description: 
-keywords: TranslateAnimation, Repeat
----
+keywords: TranslateAnimation, Repeat 
+--- 
 
 
 ####实现控件上下循环移动####
