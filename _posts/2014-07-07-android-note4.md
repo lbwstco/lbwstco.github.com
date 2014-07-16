@@ -52,7 +52,7 @@ keywords: Android, Boot
 	```
 
 
-注：manager为(ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);
+注：manager为```(ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);```
 
 
 + 在onDestroy函数里启动重新启动service（感觉有点流氓了）
