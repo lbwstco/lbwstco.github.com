@@ -49,9 +49,8 @@ keywords: Android, Boot
 		Intent i = new Intent("com.ci123.m_raisechildren.smallaty.JPushBroadcast");
 		startService(i);
 	}
-	注：manager为(ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);
 	```
-
+	注：manager为(ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);
 
 + 在onDestroy函数里启动重新启动service（感觉有点流氓了）
 
