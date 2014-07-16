@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android实现service定时启动及开机启动
+title: service开机启动
 description: 实现服务的开机启动，用于监听推送等
 keywords: Android, Boot
 ---
@@ -50,7 +50,10 @@ keywords: Android, Boot
 		startService(i);
 	}
 	```
-	注：manager为(ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);
+
+
+注：manager为(ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);
+
 
 + 在onDestroy函数里启动重新启动service（感觉有点流氓了）
 
