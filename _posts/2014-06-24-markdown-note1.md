@@ -2,6 +2,7 @@
 layout: post
 title: Markdown 学习记录一(概述) 
 description: 从宗旨、兼容HTML、特殊字符自动转换三方面精简官方文档之内容 
+category: Markdown 
 keywords: Markdown
 ---
 
