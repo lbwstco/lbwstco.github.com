@@ -27,4 +27,4 @@ public static void showKeyboard(View view) {
 	imm.showSoftInput(view, 0);
 }
 ```
-传入需要获取焦点的EditText，弹出软键盘
+传入需要获取焦点的EditText，弹出软键盘。
