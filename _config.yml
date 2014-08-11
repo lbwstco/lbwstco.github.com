@@ -19,7 +19,7 @@ nav:
     icon: icon-home
     class: home
   - text: 文章归档
-    url: /archives.html
+    url: /archive.html
     icon: icon-reorder
     class: none
   - text: 关于我
