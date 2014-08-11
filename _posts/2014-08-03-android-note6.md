@@ -1,7 +1,7 @@
 ---
 layout: post
 title: onSaveInstanceState和onRestoreInstanceState
-category: Android
+category: android
 description: Android状态管理
 keywords: 临时
 ---

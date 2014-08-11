@@ -2,6 +2,7 @@
 layout: post
 title: TranslateAnimation实现循环动画
 description: 
+category: android
 keywords: TranslateAnimation, Repeat 
 --- 
 

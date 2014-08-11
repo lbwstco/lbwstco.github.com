@@ -2,6 +2,7 @@
 layout: post
 title: Android显示隐藏软键盘
 description: 
+category: android
 keywords: 软键盘
 --- 
 

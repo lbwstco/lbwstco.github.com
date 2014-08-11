@@ -2,7 +2,8 @@
 layout: post
 title: 修改User-Agent 
 description: 根据项目需求，修改WebView及Http请求中的User-Agent
-keywords: Android, User-Agent
+category: android
+keywords: android, user-agent
 ---
 
 

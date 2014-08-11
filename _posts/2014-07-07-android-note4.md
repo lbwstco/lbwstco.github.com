@@ -2,7 +2,8 @@
 layout: post
 title: service开机启动
 description: 实现服务的开机启动，用于监听推送等
-keywords: Android, Boot
+category: android
+keywords: android, boot
 ---
 
 

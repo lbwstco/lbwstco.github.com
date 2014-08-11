@@ -2,7 +2,8 @@
 layout: post
 title: 购物清单
 description: 果然搞机的都是高富帅，屌丝情何以堪
-keywords: Shopping 
+category: shopping
+keywords: shopping 
 ---
 
 ####近期想要买的东东####
