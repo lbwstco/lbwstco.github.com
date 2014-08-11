@@ -6,6 +6,14 @@ group: navigation
 ---
 {% include JB/setup %}
 
+<p class="lotus-breadcrub">
+        <a href="{{ site.url }}/index.html" rel="nofollow" rel="nofollow" title="首页">Home</a>
+    <span> &gt; </span>
+    {{ page.title }}
+</p>
+
+<h1 class="lotus-pagetit">Archive</h1>
+
 {% for category in site.categories %}
 <h2>{{ category | first }}</h2>
 <ul class="arc-list">
