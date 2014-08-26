@@ -19,23 +19,3 @@ keywords: anchor
 
 ```app://bbs/publish```
 
-####跳转至详情页####
-关键字：
-
-
-新版：```app://bbs/post/```
-旧版：含```bbs```.```post```且不含```message```.```group```.```admin```
-
-####跳转至列表页####
-关键字：
-
-
-新版：```app://bbs```
-旧版：含```bbs```且不含```post```.```message```.```group```
-
-####跳转至消息页####
-关键字：
-
-
-含```bbs```.```message```且不含```post```.```group```
-
