@@ -11,115 +11,115 @@ keywords: anchor
 关键字：
 
 
-```#third:```
+`#third:`
 
 ####跳转至发帖页####
 关键字：
 
 
-```app://bbs/publish```
+`app://bbs/publish`
 
 ####跳转至详情页####
 关键字：
 
 
-新版：```app://bbs/post/```
-旧版：含```bbs```.```post```且不含```message```.```group```.```admin```
+新版：`app://bbs/post/`
+旧版：含`bbs`.`post`且不含`message`.`group`.`admin`
 
 ####跳转至列表页####
 关键字：
 
 
-新版：```app://bbs```
-旧版：含```bbs```且不含```post```.```message```.```group```
+新版：`app://bbs`
+旧版：含`bbs`且不含`post`.`message`.`group`
 
 ####跳转至消息页####
 关键字：
 
 
-含```bbs```.```message```且不含```post```.```group```
+含`bbs`.`message`且不含`post`.`group`
 
 ####跳转至起名测名####
 关键字：
 
 
-含```andask```.```name```
+含`andask`.`name`
 
 ####跳转至试用内页####
 关键字：
 
 
-含```app://try/good_info/```
+含`app://try/good_info/`
 
 ####跳转至试用####
 关键字：
 
 
-新版：```app://try```
-旧版：```shiyong```
+新版：`app://try`
+旧版：`shiyong`
 
 ####跳转至百宝箱###
 关键字：
 
 
-```app://box```
+`app://box`
 
 ####跳转至辣妈考场####
 关键字：
 
 
-```box/select```
+`box/select`
 
 ####跳转至用户中心####
 关键字：
 
 
-```app://user```
+`app://user`
 
 ####跳转至广场####
 关键字：
 
 
-```app://cloud/getsquare```
+`app://cloud/getsquare`
 
 ####跳转至时光轴####
 关键字：
 
 
-```app://cloud```
+`app://cloud`
 
 ####去市场评分####
 关键字：
 
 
-```appmarket```
+`appmarket`
 
 ####检查更新####
 关键字：
 
 
-```appversion```
+`appversion`
 
 ####跳转至反馈####
 关键字：
 
 
-```m_route```
+`m_route`
 
 ####跳转至登录####
 关键字：
 
 
-```applogin```
+`applogin`
 
 ####跳转至首页####
 关键字：
 
 
-```appindex```
+`appindex`
 
 ####新窗口打开####
 关键字：
 
 
-```ci123_blank```
+`ci123_blank`
