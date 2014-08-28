@@ -8,7 +8,8 @@ keywords: android, http
 
 
 ##Request##
-项目中使用Volley作为统一的请求库，从服务端返回的数据统一使用Json进行了编码，所以App封装了GsonRequest类来统一处理请求（部分涉及文件操作的请求除外）
+###一般请求###
+项目中使用Volley作为统一的请求库，从服务端返回的数据统一使用json进行了编码，所以App封装了GsonRequest类来统一处理请求（部分涉及文件操作的请求除外）
 
 ```java
 public class GsonRequest<T> extends Request<T> {
@@ -50,9 +51,7 @@ public class GsonRequest<T> extends Request<T> {
 	protected Response<T> parseNetworkResponse(NetworkResponse response) {
 		try {
 			GlobalApp.getInstance().checkSessionCookie(response.headers);
-			// System.out.println("Response Header:" + response.headers);
 			String json = new String(response.data, HttpHeaderParser.parseCharset(response.headers));
-			System.out.println("Server Return Json:" + json);
 			return Response.success(mGson.fromJson(json, mClazz), HttpHeaderParser.parseCacheHeaders(response));
 		} catch (UnsupportedEncodingException e) {
 			return Response.error(new ParseError(e));
@@ -63,4 +62,42 @@ public class GsonRequest<T> extends Request<T> {
 }
 ```
 
+Gson为Google官方用来解析json的工具，通过GsonRequest将json字符串转为Android中的对象。
+具体调用如下（以登录为例）：
+```java
+executeRequest(new GsonRequest<UniversalReturn>(Request.Method.POST, MAPI.APIS.get("NORMALLOGIN"), UniversalReturn.class, GlobalApp.getInstance().getHeader(LoginAty.this), normalLoginResponseListener(), errorListener(), dataMap));
+```
+
+其中UniversalReturn为通用返回对象类，具体的回调在normalResponseLister()中进行处理：
+```java
+private Response.Listener<UniversalReturn> normalLoginResponseListener() {
+	return new Response.Listener<UniversalReturn>() {
+		@Override
+		public void onResponse(final UniversalReturn response) {
+			TaskUtils.executeAsyncTask(new AsyncTask<Object, Object, Object>() {
+				@Override
+				protected Object doInBackground(Object... params) {
+					return null;
+				}
+
+				@Override
+				protected void onPostExecute(Object o) {
+	
+					if ("1".equals(response.ret)) {
+						Message msg = Message.obtain();
+						msg.what = LOGIN_SUCCESS;
+						loginHandler.sendMessage(msg);
+					} else {
+						Message msg = Message.obtain();
+						msg.what = LOGIN_ERROR;
+						msg.obj = response.err_msg;
+						loginHandler.sendMessage(msg);
+					}
+					super.onPostExecute(o);
+				}
+			});
+		}
+	};
+}
+```
 
