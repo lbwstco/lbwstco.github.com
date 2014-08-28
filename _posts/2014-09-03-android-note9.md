@@ -106,3 +106,94 @@ private Response.Listener<UniversalReturn> normalLoginResponseListener() {
 	};
 }
 ```
+
+
+###图片请求###
+使用Afinal处理项目中网络图片的加载，对此简单封装了以下FinalBitmap的使用，定义了FinalBitmapManager用以统一处理，如下：
+
+
+```java
+public class FinalBitmapManager {
+	public static final int MEM_CACHE_SIZE = 1024 * 1024 * ((ActivityManager) GlobalApp.getInstance().getContext().getSystemService(Context.ACTIVITY_SERVICE)).getMemoryClass() / 3;
+
+	public static FinalBitmap mFinalBitmap = FinalBitmap.create(GlobalApp.getInstance().getApplicationContext());
+
+	public static void LoadImage(View view, String url) {
+		mFinalBitmap.display(view, url);
+	}
+
+	public static void changeLoadingImage(int resouceId) {
+		mFinalBitmap.configLoadingImage(resouceId);
+	}
+
+	public static void setCacheMemory() {
+		mFinalBitmap.configMemoryCacheSize(MEM_CACHE_SIZE);
+	}
+
+	public static void setThreadSizes() {
+		mFinalBitmap.configBitmapLoadThreadSize(6);
+	}
+
+}
+```
+
+
+这里至做了最简单的封装，修改加载中图片、设置缓存大小、线程数量等。
+
+
+具体调用如下：
+
+
+```java
+FinalBitmapManager.changeLoadingImage(R.drawable.default_advertisement);
+FinalBitmapManager.LoadImage(iv, mSrc[n]);
+```
+
+####上传文件请求####
+在使用Volley之后，一度想使用Volley管理上传文件的请求，但是在进行多张图片上传的时候出现了问题，后面还是采用HttpClient，使用MultipartEntity包裹需要post的数据即可，文件类型构造FileBody，字符串类型构造StringBody。
+
+
+###Cookie###
+####请求中添加Cookie####
++ HttpClient形式：
+
+
+```java
+CookieSyncManager cookieSyncManager = CookieSyncManager.createInstance(BBSDetailPageNativeAty.this);
+cookieSyncManager.startSync();
+CookieManager cm = CookieManager.getInstance();
+String Cookiestr = cm.getCookie("http://m.ci123.com");
+
+HttpPost httppost = new HttpPost(MAPI.APIS.get("UPLOAD_IMG"));
+httppost.setHeader("Cookie", Cookiestr);
+```
+
++ Volley形式（重写getHeaders()函数即可）：
+
+
+```java
+@Override
+public Map<String, String> getHeaders() throws AuthFailureError {
+	return mHeaders;
+}
+```
+
+####接受服务器Set-Cookie####
+在parseNetworkResponse(NetworkResponse response)函数中进行Set-Cookie:
+
+
+```java
+public final void checkSessionCookie(Map<String, String> headers) { // 解析Http请求中header
+	CookieSyncManager.createInstance(getApplicationContext());
+	CookieManager cookieManager = CookieManager.getInstance();
+	cookieManager.setAcceptCookie(true);
+
+	if (headers.containsKey(SET_COOKIE_KEY)) {
+		String cookie = headers.get(SET_COOKIE_KEY);
+		if (cookie.length() > 0) {
+			CookieManager.getInstance().setCookie("http://m.ci123.com", cookie);
+			CookieSyncManager.getInstance().sync();
+		}
+	}
+}
+```
