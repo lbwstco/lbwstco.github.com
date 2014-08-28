@@ -11,6 +11,7 @@ keywords: android, http
 ###一般请求###
 项目中使用Volley作为统一的请求库，从服务端返回的数据统一使用json进行了编码，所以App封装了GsonRequest类来统一处理请求（部分涉及文件操作的请求除外）
 
+
 ```java
 public class GsonRequest<T> extends Request<T> {
 
@@ -65,11 +66,14 @@ public class GsonRequest<T> extends Request<T> {
 Gson为Google官方用来解析json的工具，通过GsonRequest将json字符串转为Android中的对象。
 具体调用如下（以登录为例）：
 
+
 ```java
 executeRequest(new GsonRequest<UniversalReturn>(Request.Method.POST, MAPI.APIS.get("NORMALLOGIN"), UniversalReturn.class, GlobalApp.getInstance().getHeader(LoginAty.this), normalLoginResponseListener(), errorListener(), dataMap));
 ```
 
+
 其中UniversalReturn为通用返回对象类，具体的回调在normalResponseLister()中进行处理：
+
 
 ```java
 private Response.Listener<UniversalReturn> normalLoginResponseListener() {
@@ -102,4 +106,3 @@ private Response.Listener<UniversalReturn> normalLoginResponseListener() {
 	};
 }
 ```
-
