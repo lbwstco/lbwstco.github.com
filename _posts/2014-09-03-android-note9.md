@@ -2,7 +2,7 @@
 layout: post
 title: 项目中的Http的操作
 category: android
-description: 从Request,Cookie,User-Agent,Response等几方面简述项目中的一些Http操作
+description: 从Request,Cookie简述项目中的一些Http操作
 keywords: android, http
 ---
 
