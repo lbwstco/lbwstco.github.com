@@ -6,8 +6,8 @@ paginate: 8
 safe: false
 
 #站点基础配置
-title: 鸡排斗士
-subTitle: 为了鸡排和思宝而奋斗
+title: KyrieLiu's Blog
+subTitle:快乐就好 
 description: 
 url: http://lbwstco.github.io
 feed: /atom.xml
