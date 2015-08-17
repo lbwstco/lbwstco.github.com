@@ -6,8 +6,8 @@ paginate: 8
 safe: false
 
 #站点基础配置
-title: Blog of KyrieLiu
-subTitle: Happy EveryDay 
+title: KyrieLiu
+subTitle: 开心每一天咯
 description: 
 url: http://lbwstco.github.io
 feed: /atom.xml
