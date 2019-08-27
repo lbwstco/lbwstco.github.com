@@ -31,7 +31,7 @@ nav:
     icon: icon-heart
     class: none
   - text: 博客源代码
-    url: https://github.com/lbwstco/lbwstco.github.com
+    url: https://github.com/lbwstco/blog
     icon: icon-github
     class: none
 
